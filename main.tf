@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "s3" {
 
 
 resource "aws_instance" "myins" {
-    ami = ""
+    ami = "ami-0ad21ae1d0696ad58"
     instance_type = "t2.micro"
     subnet_id = aws_subnet.newsub.id
     key_name = "jenkins-server-key"
