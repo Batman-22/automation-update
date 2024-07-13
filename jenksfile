@@ -1,0 +1,22 @@
+pipeline{
+    agents any
+        stages{
+            stage "clone" {
+                
+            }
+
+
+            stage "init" {
+                steps("teraform init --reconfigure")
+            }
+        }
+
+            stage "plan" {
+                steps("teraform plan")
+            }
+        
+            stage "action" {
+                steps("teraform $(action) --auto-approve")
+            }
+        
+}
