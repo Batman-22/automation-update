@@ -1,4 +1,4 @@
-resource "aws_s3" "s3" {
+resource "aws_s3_bucket" "s3" {
     bucket = "saitama122"
 }
 
