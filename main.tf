@@ -10,6 +10,6 @@ resource "aws_instance" "myins" {
     key_name = "jenkins-server-key"
     associate_public_ip_address = true
     tags = {
-        Name = "CreatedbyJenkins
+        Name = "CreatedbyJenkins"
     }
 }
